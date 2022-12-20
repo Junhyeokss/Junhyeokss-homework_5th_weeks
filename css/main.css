@@ -1,0 +1,26 @@
+.header {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header .inner {
+  display: flex;
+}
+
+.header .inner h1 {
+  flex: 1;
+}
+
+.header .inner .gnb {
+  flex: 1;
+  vertical-align: middle;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .inner .gnb ul {
+  display: flex;
+  vertical-align: middle;
+}
