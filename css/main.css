@@ -1,26 +1,312 @@
 .header {
   position: fixed;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(34, 34, 34, 0.88);
   flex-direction: row;
-  justify-content: space-between;
+  z-index: 999;
 }
 
 .header .inner {
   display: flex;
+  justify-content: space-between;
+  line-height: 65px;
+  width: 100vw;
+  padding: 0 30px;
 }
 
 .header .inner h1 {
-  flex: 1;
+}
+
+.header .inner h1 img {
+  width: 200px;
 }
 
 .header .inner .gnb {
-  flex: 1;
   vertical-align: middle;
   display: flex;
-  justify-content: flex-end;
 }
 
 .header .inner .gnb ul {
   display: flex;
   vertical-align: middle;
+  gap: 30px;
+  color: #fafbfd;
+}
+
+.header .inner .gnb ul .SCHEDULE {
+  transition: 0.5s;
+}
+
+.header .inner .gnb ul .SCHEDULE:hover {
+  color: red;
+  font-weight: 400;
+}
+
+.header .inner .gnb ul .PPV {
+  transition: 0.5s;
+}
+
+.header .inner .gnb ul .PPV:hover {
+  color: red;
+  font-weight: 400;
+}
+
+.header .inner .gnb ul .LOG_IN {
+  border: 3px solid #fafbfd;
+  padding: 3px 6px;
+  font-size: 13px;
+  transition: 0.5s;
+}
+
+.header .inner .gnb ul .LOG_IN:hover {
+  border: 3px solid red;
+  background: red;
+}
+
+.header .inner .gnb ul .SIGN_UP {
+  background: red;
+  padding: 5px 6px;
+  font-size: 13px;
+}
+
+.header .inner .gnb ul .SIGN_UP:hover {
+  background: rgb(245, 51, 51);
+}
+
+.mainVisual .inner {
+  background: url(../img/ring.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+.mainVisual .inner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.mainVisual .inner h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fafbfd;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.mainVisual .inner figure {
+  position: absolute;
+  width: 500px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.mainVisual .inner p {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fafbfd;
+  line-height: 35px;
+  font-size: 20px;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.mainVisual .inner strong {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0.005deg);
+  color: #fafbfd;
+  z-index: 1;
+  background: red;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.1s;
+}
+
+.mainVisual .inner strong:hover {
+  border: 3px solid red;
+  background: #fafbfd;
+  color: red;
+}
+
+.mainContent {
+  position: relative;
+  background-color: #f4f4f4;
+  background-image: url(../img/ufc_bacground.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.mainContent .inner {
+  padding: 280px 0 150px 0;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+
+.mainContent .desc {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 40px;
+}
+.mainContent .desc h2 {
+  color: #d20a0a;
+  font-size: 17px;
+  font-weight: 500;
+}
+.mainContent .desc p {
+  width: 1200px;
+  padding: 0 0 10px 0;
+  color: black;
+  font-size: 42px;
+  font-weight: 700;
+}
+.mainContent .inner figure img {
+  height: 250px;
+  object-fit: cover;
+  padding: 0 0 10px 0;
+}
+
+.mainContent .inner strong {
+  display: block;
+  padding: 10px 0 15px 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: #d20a0a;
+}
+
+.mainContent .inner span {
+  line-height: 30px;
+}
+
+.subContent {
+  position: relative;
+  background: url(../img/up_gray.png) no-repeat 50% 50% / contain;
+  text-align: center;
+  height: 1100px;
+}
+
+.subContent h2 {
+  padding: 80px 0 0 0;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.subContent .inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 100px 0 0 0;
+}
+
+.subContent .inner .left {
+  box-shadow: 5px 6px 20px 1px rgb(0 0 0 / 19%);
+  border: 10px solid #eaebee;
+  text-align: center;
+  line-height: 40px;
+  height: 700px;
+  padding: 5px 0 0 0;
+  background: url(../img/down_gray.png) white no-repeat 65% 0%;
+  position: relative;
+}
+
+.subContent .inner .left strong {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translate(-50%, -50%);
+  background-color: #d20a0a;
+  padding: 2px 20px;
+  font-size: 18px;
+  color: #eaebee;
+}
+.subContent .inner .right {
+  border: 15px solid #d20a0a;
+  text-align: center;
+  line-height: 40px;
+  height: 700px;
+  position: relative;
+  background: url(../img/down_gray.png) white no-repeat 65% 0%;
+}
+
+.subContent .inner .right strong {
+  position: absolute;
+  left: 50%;
+  bottom: 2.5%;
+  transform: translate(-50%, -50%);
+  background-color: #d20a0a;
+  padding: 2px 20px;
+  font-size: 18px;
+  color: #eaebee;
+}
+
+.subContent .inner .right h3 {
+  position: absolute;
+  background: #d20a0a;
+  top: 2.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 5px 15px;
+  color: #f4f4f4;
+}
+
+.subContent .inner .p {
+  padding: 60px 0 0 0;
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.subContent .inner .p1 {
+  padding: 20px 0 0 0;
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.subContent .inner .p2 {
+  padding: 20px 0 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.subContent .inner span {
+  display: block;
+  padding: 80px 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.subContent .inner li {
+  color: #d20a0a;
+}
+
+.subContent span {
+  display: block;
+  padding: 50px 0 0 0;
+}
+
+.finalContent {
+  position: relative;
+  background-image: url(../img/background_2.png), url(../img/ring2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-position: contain;
+  text-align: center;
+  width: 100vw;
+  height: 800px;
 }
