@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=!, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
+
     <title>UFC Fight Pass</title>
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -57,7 +60,7 @@
         </div>
       </section>
 
-      <section class="mainContent">
+      <section class="mainContent" data-aos="fade-up" data-aos-duration="1000">
         <div class="desc">
           <h2>EXPERIENCE COMBAT SPORTS</h2>
           <p>LIKE NEVER BEFORE</p>
@@ -98,8 +101,7 @@
           </div>
         </div>
       </section>
-
-      <section class="subContent">
+      <section class="subContent" data-aos="fade-up" data-aos-duration="1000">
         <h2>CHOOSE YOUR UFC FIGHT PASS PLAN</h2>
         <div class="inner">
           <div class="left">
@@ -154,24 +156,59 @@
           applicable renewal</span
         >
       </section>
-      <section class="finalContent">
+      <section class="finalContent" data-aos="fade-up" data-aos-duration="1500">
         <h2>HOW IT WORKS</h2>
         <p>ANYTIME. ANYWHERE. ANY DEVICE.</p>
-        <span>ANYTIME. ANYWHERE. ANY DEVICE. </span>
+        <span
+          >Available on iOS, Android, Apple TV, Amazon Fire, ROKU, Xbox, LG and
+          Samsung Smart TVs, and SONY TVs with Android TV
+        </span>
         <div class="Appstore">
           <figure>
-            <a href="">
+            <a href="" class="a1">
               <img src="./img/google play.png" alt="" />
             </a>
           </figure>
           <figure>
-            <a href="">
+            <a href="" class="a2">
               <img src="./img/apple play.png" alt="" />
             </a>
           </figure>
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="inner">
+        <h2>
+          <figure>
+            <a href=""><img src="./img/footer_ufc.png" alt="" /></a>
+          </figure>
+        </h2>
+        <ul>
+          <li class="step1">
+            <a href="">HELP</a>
+          </li>
+          <li class="step2">
+            <a href="">FAQ</a>
+          </li>
+          <li class="step3">
+            <a href="">TERMS OF USE</a>
+          </li>
+          <li class="step4">
+            <a href="">PRIVACY POLICY</a>
+          </li>
+        </ul>
+        <div class="logo">
+          <a href=""><i class="xi-facebook"></i></a>
+          <a href=""><i class="xi-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact">
+        <h3>
+          UFC and associated designs are registered and/or owned exclusively by
+          Zuffa, LLC. © 2019 All rights reserved
+        </h3>
+      </div>
+    </footer>
   </body>
 </html>

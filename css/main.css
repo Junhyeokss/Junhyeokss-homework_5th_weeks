@@ -217,7 +217,7 @@
   border: 10px solid #eaebee;
   text-align: center;
   line-height: 40px;
-  height: 700px;
+  height: 750px;
   padding: 5px 0 0 0;
   background: url(../img/down_gray.png) white no-repeat 65% 0%;
   position: relative;
@@ -237,7 +237,7 @@
   border: 15px solid #d20a0a;
   text-align: center;
   line-height: 40px;
-  height: 700px;
+  height: 750px;
   position: relative;
   background: url(../img/down_gray.png) white no-repeat 65% 0%;
 }
@@ -297,16 +297,120 @@
 
 .subContent span {
   display: block;
-  padding: 50px 0 0 0;
+  padding: 30px 0 0 0;
 }
 
 .finalContent {
   position: relative;
-  background-image: url(../img/background_2.png), url(../img/ring2.jpg);
+  background-image: url(../img/background_2.png),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.85) 19%,
+      rgba(0, 0, 0, 0.03) 47%,
+      #000 76%
+    ),
+    url(../img/ring2.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-position: contain;
   text-align: center;
-  width: 100vw;
-  height: 800px;
+  width: 100%;
+  height: 878px;
+}
+
+.finalContent h2 {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #d20a0a;
+  transform: translate(-50%, -50%);
+}
+
+.finalContent p {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  font-size: 30px;
+  color: #d20a0a;
+  font-weight: 500;
+  color: #eaebee;
+  transform: translate(-50%, -50%);
+}
+.finalContent span {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #eaebee;
+  transform: translate(-50%, -50%);
+}
+
+.finalContent .Appstore {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  gap: 30px;
+  height: 100px;
+  width: 400px;
+}
+
+.finalContent .Appstore figure > img {
+  height: 100px;
+  width: 100px;
+}
+
+.footer {
+  background: #161616;
+}
+
+.footer .inner {
+  display: flex;
+  width: 1200px;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding: 15px 0 0 0;
+}
+
+.footer .inner h2 {
+  padding: 0 0 8px 0;
+}
+
+.footer .inner img {
+  height: 25px;
+}
+
+.footer .inner ul {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 13px;
+  gap: 20px;
+  font-weight: 500;
+  color: #a4a7ac;
+}
+
+.footer .inner .logo {
+  color: #a4a7ac;
+}
+
+.footer .contact {
+  position: relative;
+  padding: 3px 0 0 0;
+  background: #333;
+  height: 40px;
+}
+
+.footer .contact h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #a4a7ac;
+  font-size: 13px;
+  transform: translate(-50%, -50%);
 }
