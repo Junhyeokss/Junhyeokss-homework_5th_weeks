@@ -392,9 +392,10 @@
 .footer .inner {
   display: flex;
   width: 1200px;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 0 auto;
   padding: 15px 0 0 0;
+  gap: 280px;
 }
 
 .footer .inner h2 {
@@ -403,20 +404,77 @@
 
 .footer .inner img {
   height: 25px;
+  transition: 0.5s;
+}
+
+.footer .inner img:hover {
+  height: 25px;
+  background: #d20a0a;
+  border-radius: 10px;
 }
 
 .footer .inner ul {
   display: flex;
-  width: 300px;
-  margin: 0 auto;
+  width: 410px;
   font-size: 13px;
   gap: 20px;
   font-weight: 500;
   color: #a4a7ac;
 }
 
+.footer .inner ul .step1 {
+  transition: 0.5s;
+}
+
+.footer .inner ul .step1:hover {
+  color: #d20a0a;
+}
+.footer .inner ul .step2 {
+  transition: 0.5s;
+}
+
+.footer .inner ul .step2:hover {
+  color: #d20a0a;
+}
+.footer .inner ul .step3 {
+  transition: 0.5s;
+}
+
+.footer .inner ul .step3:hover {
+  color: #d20a0a;
+}
+.footer .inner ul .step4 {
+  transition: 0.5s;
+}
+
+.footer .inner ul .step4:hover {
+  color: #d20a0a;
+}
+.footer .inner ul .step5 {
+  transition: 0.5s;
+}
+
+.footer .inner ul .step5:hover {
+  color: #d20a0a;
+}
+
 .footer .inner .logo {
   color: #a4a7ac;
+}
+
+.footer .inner .xi-facebook {
+  transition: 0.5s;
+}
+
+.footer .inner .xi-facebook:hover {
+  color: #d20a0a;
+}
+.footer .inner .xi-instagram {
+  transition: 0.5s;
+}
+
+.footer .inner .xi-instagram:hover {
+  color: #d20a0a;
 }
 
 .footer .contact {
