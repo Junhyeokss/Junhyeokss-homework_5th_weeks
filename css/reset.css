@@ -23,6 +23,7 @@ a {
 img {
   vertical-align: middle;
   max-width: 100%;
+  font-size: 0;
 }
 
 address,
