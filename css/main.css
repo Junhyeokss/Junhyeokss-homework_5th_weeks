@@ -360,6 +360,26 @@
   width: 400px;
 }
 
+.finalContent .Appstore .a1 {
+  transition: 0.2s;
+}
+
+.finalContent .Appstore .a1:hover {
+  background-color: #d20a0a;
+  background-size: cover;
+  padding: 15px 0 20px 0;
+  border-radius: 5px;
+}
+.finalContent .Appstore .a2 {
+  transition: 0.2s;
+}
+.finalContent .Appstore .a2:hover {
+  background-color: #d20a0a;
+  background-size: cover;
+  padding: 15px 0 20px 0;
+  border-radius: 5px;
+}
+
 .finalContent .Appstore figure > img {
   height: 100px;
   width: 100px;
